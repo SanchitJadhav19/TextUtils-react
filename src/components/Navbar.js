@@ -5,7 +5,7 @@ import { faSun } from '@fortawesome/free-solid-svg-icons';
 export default function Navbar(props) {
   return (
     <nav className={`navbar navbar-expand-lg ${props.mode === 'light' ? 'navbar-light bg-light' : 'navbar-dark bg-dark'}`}>
-      <a className="navbar-brand mx-1" href="/">
+      <a className="navbar-brand mx-1" href="#">
         {props.title}
         {/* textUtils */}
       </a>
@@ -23,15 +23,15 @@ export default function Navbar(props) {
       <div className="collapse navbar-collapse" id="navbarSupportedContent">
         <ul className="navbar-nav mr-auto">
           <li className="nav-item active">
-            <a className="nav-link" href="/">
+            <a className="nav-link" href="#">
               Home
             </a>
           </li>
-          <li className="nav-item">
-            <a className="nav-link" href="#about">
-              About Us
-            </a>
-          </li>
+          // <li className="nav-item">
+          //   <a className="nav-link" href="#">
+          //     About Us
+          //   </a>
+          // </li>
         </ul>
       </div>
       <div className="d-flex">
